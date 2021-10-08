@@ -8,12 +8,12 @@
 		<version>2.2.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.iwayq</groupId>
-	<artifactId>iwayQApp</artifactId>
+	<groupId>com.ohwilly</groupId>
+	<artifactId>ohwillyApp</artifactId>
 	<version>1.0-RELEASE</version>
 	<packaging>war</packaging>
-	<name>iwayQApp</name>
-	<description>iwayQ DevOps project for Spring Boot</description>
+	<name>ohwillyQApp</name>
+	<description>ohwilly DevOps project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
