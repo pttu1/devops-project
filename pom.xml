@@ -12,7 +12,7 @@
 	<artifactId>ohwillyApp</artifactId>
 	<version>1.0-RELEASE</version>
 	<packaging>war</packaging>
-	<name>ohwillyQApp</name>
+	<name>ohwillyApp</name>
 	<description>ohwilly DevOps project for Spring Boot</description>
 
 	<properties>
