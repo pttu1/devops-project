@@ -1,0 +1,29 @@
+We are going to provision our services in the order below:
+1. MySQL (DB svc)
+2. Memcache (DB caching svc)
+3. RabbitMQ (Broker/Queue svc)
+4. Tomcat (Application svc)
+5. Nginx
+
+ssh into db01: $vagrant ssh db01
+Go to root user: $sudo -i
+Update to latest packages(do on all ): yum update -y
+**Setup password for db (env variable): $DATABASE_PASS='admin123'
+**To check: $echo $DATABASE_PASS
+
+We can put it in our profile: vi /etc/profile....add and save.
+$Make it dominant: source /etc/profile
+
+**Install package that sets repository access: $ yum install epel-release
+**Install mysql package: $ yum install git mariadb-server -y
+Install enable: $ sysmtemctl start mariadb
+		$ sysmtemctl enable mariadb
+		$ sysmtemctl status mariadb
+
+**Install mysql: $mysql_secure_installation
+Answer Y for alll except disallow root login 
+
+After setup, we can test the login: $mysql -u root -p
+Enter: press enter.....$exit after test
+
+We can clone our source

@@ -1,0 +1,25 @@
+Switch to branch local-provisioning: $git checkout local-provisioning
+
+ls the directory in the branch: ansible/ Jenkinsfile pom.xml README.md src/ vagrant/
+
+$cd vagrant
+
+ls...automated_provisioning/ manual_provisitioning/
+
+Go to manual_provisitioning/ We have a vagrantfile and vagrantProfileProjectSetUp.pdf
+
+After installing and settingup Vagrantfile....
+We run $vagrant up
+
+Next we validate each server:
+For nginx: $vagrant ssh web01
+check hostfile: $ cat /etc/hosts
+
+hostmanager.enabled in our vagrantfile automatically updates those hosts...
+**We can now ping tomcat from here: $ping app01
+**Logout: $logout
+
+Do the same for tomcat server...Check hosts and ping backend services: mc01, rmq01 and db01
+
+
+ 

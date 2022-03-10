@@ -1,0 +1,15 @@
+Tools: VM, Vargrant Git, Chocolarey
+
+JDK8, Maven, AWS CLI, Visual Studio
+
+Sign up: Sonarcloud, Godaddy, dockerhub, github
+
+AWS: IAM with MFA, Billing alarm, Ceritificate setup
+
+Install chocolaey and from the chocolatey website, you cansearch for a another tool and install them using the command on the page. 
+
+**If chocolatey won't install, disable antivirus for a minute. Run powershell as admin.
+
+https://github.com/devopshydclub/vprofile-project
+
+Go to prereqs branch

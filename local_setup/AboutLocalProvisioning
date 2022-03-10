@@ -1,0 +1,50 @@
+This project is a milti-tier web application that will be setup locally. 
+
+Application services, Tomcat. Load balancers: Nginx. 
+
+We setup locally that is automated, repeatable (IaC). So that we can do R&D locally
+
+Tools: Hypervisor: VM VirtualBox
+	Automation: Vigrant
+	CLI: Git Bash
+	IDE: VS Code
+
+
+Objective: VM automation locally, Baseline for upcoming projects, Real world project setup locally (for R&D).
+
+
+Architecture of project services: Nginx, Tomcat, RabbitMQ, Memcached, MysQL
+
+Archietecture of Automated setup: Vagrant, Vitualbox, Git bash, and certain scipts....See screenshot
+
+We are going to use vigrant to automatically setup vms. It is going to communicate with virtualbox.
+We'll then use some bash scripts or bash commands to set up our project services.
+We'll automatically create vms for our services from vigrant. 
+
+Flow of exec:
+1. setup tools mentioned in prerequisite (dockerhub, domain name, github, etc)
+2. clone the application source code
+3. cd into the vagrant dir
+4. Spin up vms
+5. Validate 
+6. Setup project services: Mysql, Memcached, RabbitMQ, Tomcat, Nginx, build and deploy
+7. Verify from browser
+
+From https://github.com/devopshydclub/vprofile-project
+
+Keep files from the repo in respective branches..
+
+Switch to branch local-provisioning: $git checkout local-provisioning
+
+ls the directory in the branch: ansible/ Jenkinsfile pom.xml README.md src/ vagrant/
+
+$cd vagrant
+
+ls...automated_provisioning/ manual_provisitioning/
+
+Go to manual_provisitioning/ We have a vagrantfile and vagrantProfileProjectSetUp.pdf
+
+After installing and settingup Vagrantfile....
+We run $vagrant up
+
+Next we validate. 
