@@ -26,4 +26,4 @@ Answer Y for alll except disallow root login
 After setup, we can test the login: $mysql -u root -p
 Enter: press enter.....$exit after test
 
-We can clone our source
+We can clone our source code for the .sql file
