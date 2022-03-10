@@ -1,0 +1,14 @@
+Create IAM user in terraform.
+
+Creating admin user: go to IAM -> Users -> New users -> User name (admin)
+Give it both console access and programmatic access
+
+Next, we create a group that the user can be part of and then we assign permissions to the group rather that directly to the user. 
+
+In this case, we are going to click the permission tab and give the user administrator access. 
+
+We create main.tf file....create aws provider and do $terraform init
+
+It creates a terraform folder with our provider and a .lock.hcl file
+
+Provider gives us access to provider API

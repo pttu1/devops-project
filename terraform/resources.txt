@@ -1,0 +1,30 @@
+VPC is a private cloud which is a 
+
+We create resources in AWS and we don't want other users or accounts to have access to your resources. We create then in a specific region. And VPC spans through availability zones in that region. AZ are subnets. The data center maybe the same but VPC isolates your resources from other user's resoources. 
+
+VPC is virtual representation of network infrastructure
+Things we used to do locally, like setup server, network configuration, etc are now moved to the cloud and VPC is the representation of it.
+
+SUBNET spans availability zones while VPC spans the whole region. 
+
+IP Address: 
+
+Internal IP range on VPC level
+Not for outside web traffic
+for comminication inside the VPC
+
+
+For allowing internet connectivity to our vpc, Internet gateway connects the VPC to the outside internet. 
+EC2 and other resources takes internal VPC IP address from a subnet.
+
+We can also use FIREWALL to secure our components, controll access to our VPC and conroll access to individual server instances.
+
+We might want to ssh into our server and do some configuration. For that we have Network Access Control List (NACL) and SG
+
+Configure access on subnet level => NACL
+Configure access on instance level => Security Group
+
+We can use terraform apply and enter 'yes'.
+We can remove resources: $terraform destroy -target <resource-name>
+Use terraform apply to remove resources.
+

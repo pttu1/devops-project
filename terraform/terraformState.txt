@@ -1,0 +1,13 @@
+Terraform has a 'refreshing state' option when we do $terraform apply. 
+
+In our folder, terraform.tfstate file holds the current state of our last execution. And, terraform.tfstate.backup holds the state before our current stae. 
+
+I think we could check our ids and arns from our current state. 
+
+We can access the state list using commands 
+
+$terraform state
+
+$terraform state list
+
+$terraform state show aws_subnet.dev-subnet-1

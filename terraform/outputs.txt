@@ -1,0 +1,1 @@
+Another feature of terraform is that it allows us to output the set of attributes and the values of the resources we have created. 

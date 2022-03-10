@@ -1,0 +1,8 @@
+$terraform plan
+helps up see what configuration we about to coonfigure
+
+To not enter 'yes' after $terrform apply, we can do
+$terraform apply --auto-approve
+
+We can create all of our resources:
+$terraform destroy

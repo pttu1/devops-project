@@ -1,0 +1,16 @@
+Another interesting feature is variables - input variables. 
+
+For example, we don't want to hard-code our cidr block, we want to pass it as a parameter. 
+
+For multiple environment for example, we can use a variable and 
+
+For this we can use the word variable where we have a block we can describe variable and assign value. 
+
+We assign value in 3 ways:
+
+1.When we do $terrafrom apply, terraform asks for a value. 
+2.$terraform apply -var "subnet-cidr-block=10.0.10.0/20"
+3, Most efficient way is create a terraform.tfvars wheere we can define key:value pair for our values.
+
+If we don't use file with name 'terraform.tfvars'; we can do 
+$terraform apply -var-file <filename.tfvars>
