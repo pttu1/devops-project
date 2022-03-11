@@ -22,6 +22,8 @@ variable "environment" {
     description = "deployment environment"
 }
 
+#create variable after setting environment variable
+
 #Create VPC with syntax resource, resource name,
 #and the name we want to give it (like variable). 
 #We are going to create CIDER block (IP address range)
