@@ -1,0 +1,19 @@
+Vagrant.configure("2") do |config|
+    config.hostmanager.enabled = true 
+    config.hostmanager.manage_host = true
+
+    
+  ### Ansible1 vm  #### 
+  config.vm.define "ansible1" do |ansible1|
+    ansible1.vm.box = "geerlingguy/centos7"
+    ansible1.vm.hostname = "ansible1"
+    ansible1.vm.network "private_network", ip: "192.168.33.16"
+  end
+    
+  ### DB vm  ####
+    config.vm.define "ansible2" do |ansible2|
+      ansible2.vm.box = "geerlingguy/centos7"
+      ansible2.vm.hostname = "ansible2"
+      ansible2.vm.network "private_network", ip: "192.168.33.17"
+    end
+  end
